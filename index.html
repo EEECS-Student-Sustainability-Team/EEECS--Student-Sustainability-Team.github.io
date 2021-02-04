@@ -76,7 +76,7 @@
         console.log(where)
         if (where == "right") {
             if (cur_vid_id < videos.length - 1) {
-                $("#current-video").fadeOut(800)
+                $("#current-video").fadeIn(800)
                 cur_vid_id++;
                 var current_video = document.getElementById("current-video")
                 current_video.src = videos[cur_vid_id]
@@ -84,7 +84,7 @@
             }
         } else {
             if (cur_vid_id > 0) {
-                $("#current-video").fadeOut(800)
+                $("#current-video").fadeIn(800)
                 cur_vid_id--;
                 var current_video = document.getElementById("current-video")
                 current_video.src = videos[cur_vid_id]
