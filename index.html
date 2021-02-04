@@ -45,11 +45,12 @@
     <section id="videos">
         <div id="videos-heading">Watch our Videos...</div>
         <div id="video-slider" class="slider">
-            <img id="left" class="arrow" src="imgs/arrow-point-to-right (1).png">
+            <img id="left" onclick="changeVideo('left')" class="arrow" src="imgs/arrow-point-to-right (1).png">
             <iframe id="current-video" width="560" height="315" src="https://www.youtube.com/embed/Em05F_7nSSE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <img id="right" class="arrow" src="imgs/arrow-point-to-right (2).png">
+            <img id="right" onclick="changeVideo('right')" class="arrow" src="imgs/arrow-point-to-right (2).png">
         </div>
     </section>
+
     <section id="contact-us">
         <div id="videos-heading">Contact us</div>
         <div id="contact-box">
@@ -60,12 +61,36 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+    var videos = ["https://www.youtube.com/embed/Em05F_7nSSE", "https://www.youtube.com/embed/paL2X89ZIYk", "https://www.youtube.com/embed/CrMP7_1Fppw", "https://www.youtube.com/embed/pZi3xdxwN5I", "https://www.youtube.com/embed/3x3cEKbTkn0"]
+    var cur_vid_id = 0
+
     function changeNews() {
         console.log("dasdas")
         var news = document.getElementById("current-news")
         $("#current-news").fadeOut(800)
 
         $("#current-news").fadeIn(800)
+    }
+
+    function changeVideo(where) {
+        console.log(where)
+        if (where == "right") {
+            if (cur_vid_id < videos.length - 1) {
+                $("#current-video").fadeOut(800)
+                cur_vid_id++;
+                var current_video = document.getElementById("current-video")
+                current_video.src = videos[cur_vid_id]
+                $("#current-video").fadeIn(800)
+            }
+        } else {
+            if (cur_vid_id > 0) {
+                $("#current-video").fadeOut(800)
+                cur_vid_id--;
+                var current_video = document.getElementById("current-video")
+                current_video.src = videos[cur_vid_id]
+                $("#current-video").fadeIn(800)
+            }
+        }
     }
 </script>
 
