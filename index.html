@@ -13,57 +13,42 @@
 
 <body>
     <div id="top-banner">
-        <div id="banner-text">
+        <div id="banner-heading">
             EEECS Student Sustainability Team
         </div>
-        <img id="qub-logo" src="imgs/qub-logo.png">
+        <img id="banner-img" src="imgs/qub-logo.png">
     </div>
-    <div id=>
-        <div id="intro-box" class="box">
-            <div id="content1">
-                <img id="into-img1" src="imgs/170.png">
-                <div class="intro-text">
-                    <h1>About Us</h1><br><br>We are a group of students from Queen's University Belfast exploring how technology can be used to achieve the UN Sustainable Development Goals. We operate within the school of Electronics, Electrical Engineering
-                    and Computer Science with support from a team of amazing staff members. We would love to partner with companies who use technology for societal good. Keep an eye out for our upcoming events and please get in contact with us if you
-                    / your company would be interested in getting involved!<br><br><br>
-                </div>
-            </div>
+
+    <div id="intro-box">
+        <img id="intro-img" src="imgs/170.png">
+        <div id="intro-text">
+            <h1>About Us</h1>
+            <br> We are a group of students from Queen's University Belfast exploring how technology can be used to achieve the UN Sustainable Development Goals. We operate within the school of Electronics, Electrical Engineering and Computer Science
+            with support from a team of amazing staff members. We would love to partner with companies who use technology for societal good. Keep an eye out for our upcoming events and please get in contact with us if you / your company would be interested
+            in getting involved!
         </div>
-        <div class="box">
-            <h1 id="news-heading">Team Members</h1>
-            <div class="line">
-            </div>
-            <div id="slideshow">
-                <div>
-                    <img id="profile" src="imgs/profile.jpeg">
-                    <div class="stae">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget erat nisi. Sed vehicula est at luctus euismod. Vestibulum gravida convallis dui sit amet bibendum. Praesent lectus augue, condimentum auctor maximus eu, placerat ac lacus. Proin at molestie
-                        tortor, at pretium dui. Etiam facilisis sagitti
-                    </div>
+    </div>
+    <section id="news">
+        <div id="news-heading">Latest News</div>
+        <div id="news-slider" class="slider">
+            <img id="left" class="arrow" src="imgs/arrow-point-to-right (1).png">
+            <div class="news-box">
+                <img id="new1-img" src="imgs/ux.jpeg">
+                <div id="news1-text" class="news-text">
+                    We are excited to announce the launch of our new project! We are looking for organisations to help support the EEECS Student Sustainability Team at Queen's University Belfast in this new project by sharing their thoughts and experiences around #UXandAccessibility
+                    😊
                 </div>
-                <div>
-                    <img id="profile2" src="imgs/profile2.jpeg">
-                    <div class="stae">
-                        fficitur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque porta sodales nisl. Donec cursus, justo sed consectetur mattis, sapien au
-                    </div>
-                </div>
-
             </div>
-
+            <img id="right" class="arrow" src="imgs/arrow-point-to-right (2).png">
         </div>
+    </section>
 
-
+    <div id="videos-heading">Watch our Videos...</div>
+    <div id="video-slider" class="slider">
+        <img id="left" class="arrow" src="imgs/arrow-point-to-right (1).png">
+        <iframe id="current-video" width="560" height="315" src="https://www.youtube.com/embed/Em05F_7nSSE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img id="right" class="arrow" src="imgs/arrow-point-to-right (2).png">
+    </div>
 </body>
-<script>
-    $("#slideshow > div:gt(0)").hide();
 
-    setInterval(function() {
-        $('#slideshow > div:first')
-            .fadeOut(2000)
-            .next()
-            .fadeIn(2000)
-            .end()
-            .appendTo('#slideshow');
-    }, 3000);
-</script>
-<html>
+</html>
