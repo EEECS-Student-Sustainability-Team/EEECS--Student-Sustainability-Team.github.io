@@ -31,15 +31,15 @@
     <section id="news">
         <div id="news-heading">Latest News</div>
         <div id="news-slider" class="slider">
-            <img id="left" class="arrow" src="imgs/arrow-point-to-right (1).png">
-            <div class="news-box">
+            <img id="left-news" onclick="changeNews()" class="arrow" src="imgs/arrow-point-to-right (1).png">
+            <div id="current-news" class="news-box">
                 <img id="new1-img" src="imgs/ux.jpeg">
                 <div id="news1-text" class="news-text">
                     We are excited to announce the launch of our new project! We are looking for organisations to help support the EEECS Student Sustainability Team at Queen's University Belfast in this new project by sharing their thoughts and experiences around #UXandAccessibility
                     😊
                 </div>
             </div>
-            <img id="right" class="arrow" src="imgs/arrow-point-to-right (2).png">
+            <img id="right" onclick="changeNews()" class="arrow" src="imgs/arrow-point-to-right (2).png">
         </div>
     </section>
     <section id="videos">
@@ -58,5 +58,15 @@
         </div>
     </section>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function changeNews() {
+        console.log("dasdas")
+        var news = document.getElementById("current-news")
+        $("#current-news").fadeOut(800)
+
+        $("#current-news").fadeIn(800)
+    }
+</script>
 
 </html>

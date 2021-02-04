@@ -106,6 +106,7 @@ body {
 }
 
 .news-box {
+    z-index: -2;
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
     color: white;
