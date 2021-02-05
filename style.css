@@ -137,6 +137,7 @@ body {
     padding: 1%;
     border-radius: 10px;
     cursor: pointer;
+    transition-duration: 0.2s
 }
 
 .arrow:hover {
@@ -212,6 +213,10 @@ body {
     background-color: white;
     border-radius: 22px;
     cursor: pointer;
+}
+
+.contact-icon {
+    transition-duration: 0.2s
 }
 
 .contact-icon:hover {
