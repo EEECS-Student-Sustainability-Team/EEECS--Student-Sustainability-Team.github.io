@@ -136,10 +136,16 @@ body {
     margin-bottom: auto;
     padding: 1%;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .arrow:hover {
     box-shadow: 2px 2px 30px 3px rgba(0, 0, 0, 0.75);
+}
+
+#video-slider {
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .news-text {
@@ -177,8 +183,37 @@ body {
     margin-right: 14%;
     border-radius: 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 3%;
     text-decoration: none;
     margin-bottom: 8%;
+}
+
+#contact-box a {
+    width: auto;
+}
+
+#contact-box a img {
+    display: block;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.contact-icon {
+    display: block;
+    width: 20%;
+    height: 20%;
+    background-color: white;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.contact-icon:hover {
+    box-shadow: 2px 10px 20px 3px rgba(0, 0, 0, 0.75);
 }

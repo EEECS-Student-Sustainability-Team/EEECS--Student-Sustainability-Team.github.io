@@ -48,14 +48,19 @@
             <img id="left" onclick="changeVideo('left')" class="arrow" src="imgs/arrow-point-to-right (1).png">
             <iframe id="current-video" width="560" height="315" src="https://www.youtube.com/embed/Em05F_7nSSE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <img id="right" onclick="changeVideo('right')" class="arrow" src="imgs/arrow-point-to-right (2).png">
+            <div id="item-track">
+                <div class="dot"></div>
+            </div>
         </div>
     </section>
 
     <section id="contact-us">
         <div id="videos-heading">Contact us</div>
         <div id="contact-box">
-            <a href="https://www.linkedin.com/company/eeecs-student-sustainability-team/">LinkedIn
-            </a>
+            <img onclick="openLink('https://www.linkedin.com/company/eeecs-student-sustainability-team/')" class="contact-icon" src="imgs/linkedin.png">
+
+            <img onclick="openLink('https://www.facebook.com/eeecsSST')" class="contact-icon" src="imgs/facebook.png">
+
         </div>
     </section>
 </body>
@@ -93,6 +98,10 @@
                 });
             }
         }
+    }
+
+    function openLink(link) {
+        window.open(link)
     }
 </script>
 
